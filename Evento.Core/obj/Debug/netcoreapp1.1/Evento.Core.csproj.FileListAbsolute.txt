@@ -1,0 +1,7 @@
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\bin\Debug\netcoreapp1.1\Evento.Core.deps.json
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\bin\Debug\netcoreapp1.1\Evento.Core.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\bin\Debug\netcoreapp1.1\Evento.Core.pdb
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\obj\Debug\netcoreapp1.1\Evento.Core.csprojResolveAssemblyReference.cache
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\obj\Debug\netcoreapp1.1\Evento.Core.AssemblyInfo.cs
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\obj\Debug\netcoreapp1.1\Evento.Core.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Core\obj\Debug\netcoreapp1.1\Evento.Core.pdb

@@ -1,0 +1,13 @@
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Api.deps.json
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Api.runtimeconfig.json
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Api.runtimeconfig.dev.json
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Api.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Api.pdb
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Core.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Infrastructure.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Infrastructure.pdb
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\bin\Debug\netcoreapp1.1\Evento.Core.pdb
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\obj\Debug\netcoreapp1.1\Evento.Api.csprojResolveAssemblyReference.cache
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\obj\Debug\netcoreapp1.1\Evento.Api.AssemblyInfo.cs
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\obj\Debug\netcoreapp1.1\Evento.Api.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Api\obj\Debug\netcoreapp1.1\Evento.Api.pdb

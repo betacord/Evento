@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "evento.infrastructure/1.0.0": {
+        "dependencies": {
+          "Evento.Core": "1.0.0"
+        },
+        "runtime": {
+          "Evento.Infrastructure.dll": {}
+        }
+      },
+      "evento.core/1.0.0": {
+        "runtime": {
+          "Evento.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "evento.infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "evento.core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

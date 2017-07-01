@@ -1,0 +1,9 @@
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\bin\Debug\netcoreapp1.1\Evento.Infrastructure.deps.json
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\bin\Debug\netcoreapp1.1\Evento.Infrastructure.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\bin\Debug\netcoreapp1.1\Evento.Infrastructure.pdb
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\bin\Debug\netcoreapp1.1\Evento.Core.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\bin\Debug\netcoreapp1.1\Evento.Core.pdb
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\obj\Debug\netcoreapp1.1\Evento.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\obj\Debug\netcoreapp1.1\Evento.Infrastructure.AssemblyInfo.cs
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\obj\Debug\netcoreapp1.1\Evento.Infrastructure.dll
+C:\Users\t-krz\documents\visual studio 2017\Projects\Evento\Evento.Infrastructure\obj\Debug\netcoreapp1.1\Evento.Infrastructure.pdb
