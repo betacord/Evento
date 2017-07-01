@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Evento.Core.Repositories;
+using Evento.Infrastructure.Mappers;
+using Evento.Infrastructure.Repositories;
+using Evento.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +33,10 @@ namespace Evento.Api
         {
             // Add framework services.
             services.AddMvc();
+            services.AddScoped<IEventRepository, EventRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IEventService, EventService>();
+            services.AddSingleton(AutoMapperConfig.Initialize());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
