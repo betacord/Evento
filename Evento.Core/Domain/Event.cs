@@ -30,12 +30,34 @@ namespace Evento.Core.Domain
         public Event(Guid Id, string Name, string Description, DateTime StartDate, DateTime EndDate)
         {
             this.Id = Id;
-            this.Name = Name;
-            this.Description = Description;
+            SetName(Name);
+            SetDescription(Description);
             this.CreatedAt = DateTime.UtcNow;
             this.StartDate = StartDate;
             this.EndDate = EndDate;
             this.UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void SetName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new Exception($"Event with id {Id} can not have an empty name");
+            }
+
+            Name = name;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void SetDescription(string description)
+        {
+            if (string.IsNullOrWhiteSpace(description))
+            {
+                throw new Exception($"Event with id {Id} can not have an empty name");
+            }
+
+            Description = description;
+            UpdatedAt = DateTime.UtcNow;
         }
 
         public void AddTickets(int amount, decimal price)
