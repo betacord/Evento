@@ -154,6 +154,38 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.Antiforgery.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "1.1.2",
+          "Microsoft.AspNetCore.Http": "1.1.2",
+          "Microsoft.AspNetCore.Http.Extensions": "1.1.2",
+          "Microsoft.Extensions.Logging.Abstractions": "1.1.2",
+          "Microsoft.Extensions.Options": "1.1.2",
+          "Microsoft.Extensions.WebEncoders": "1.1.2",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication": "1.1.2",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "2.1.2",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/1.1.2": {
         "type": "package",
         "dependencies": {
@@ -1509,6 +1541,75 @@
           "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
+      "Microsoft.IdentityModel.Logging/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Specialized": "4.3.0",
+          "System.Diagnostics.Contracts": "4.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.1.2",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "2.1.2",
+          "System.Dynamic.Runtime": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "1.1.2",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tools": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Security.Claims": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.1.2": {
         "type": "package",
         "dependencies": {
@@ -2653,6 +2754,18 @@
           }
         }
       },
+      "System.IdentityModel.Tokens.Jwt/5.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
+        }
+      },
       "System.Interactive.Async/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -3652,7 +3765,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
@@ -4174,12 +4287,6 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/netcoreapp1.1/Evento.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netcoreapp1.1/Evento.Core.dll": {}
         }
       },
       "Evento.Infrastructure/1.0.0": {
@@ -4188,13 +4295,8 @@
         "dependencies": {
           "AutoMapper": "6.1.1",
           "Evento.Core": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/netcoreapp1.1/Evento.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netcoreapp1.1/Evento.Infrastructure.dll": {}
         }
       }
     }
@@ -4286,6 +4388,32 @@
         "lib/netstandard1.3/Microsoft.AspNetCore.Antiforgery.xml",
         "microsoft.aspnetcore.antiforgery.1.1.2.nupkg.sha512",
         "microsoft.aspnetcore.antiforgery.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication/1.1.2": {
+      "sha512": "ElbYDkhi7MOeGpOsxvQEpdREkbwI0SQ/+qOhpSZiWKtG5dAHx9hG/GohQbSCTXyY/aD728/vH9/yQZCJscY7eg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication/1.1.2",
+      "files": [
+        "lib/net451/Microsoft.AspNetCore.Authentication.dll",
+        "lib/net451/Microsoft.AspNetCore.Authentication.xml",
+        "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.dll",
+        "lib/netstandard1.3/Microsoft.AspNetCore.Authentication.xml",
+        "microsoft.aspnetcore.authentication.1.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/1.1.2": {
+      "sha512": "+RxT2GItuFrlUiMmvKUUwQAFPeIOEVycRo/GEiL5xvVpbtW3jqckSq5Ux4H+ML9WZhHJKYi+cWIEyqFgtoQh+g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/1.1.2",
+      "files": [
+        "lib/net451/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net451/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "lib/netstandard1.4/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netstandard1.4/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.1.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authorization/1.1.2": {
@@ -5426,6 +5554,56 @@
         "lib/netstandard1.0/Microsoft.Extensions.WebEncoders.xml",
         "microsoft.extensions.webencoders.1.1.2.nupkg.sha512",
         "microsoft.extensions.webencoders.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/1.1.2": {
+      "sha512": "QPMFfRVnRkCzGpEQz/YEPsbwUjAp5R1W2dpaXHlJJNA7fp9gV4m4TDKvvXhQnqdEL0a0luNrYFZrbz7NRI1rXQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/1.1.2",
+      "files": [
+        "lib/net451/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
+        "microsoft.identitymodel.logging.1.1.2.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols/2.1.2": {
+      "sha512": "DYjTihC3VrzhXiv2cdoAxBx2RhFphad5BXfwmebdt3aNqrUpCOfsfYN7Ivequ05MiNBfgjBfWf8pd0+6S8jSCA==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols/2.1.2",
+      "files": [
+        "lib/net451/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net451/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.xml",
+        "microsoft.identitymodel.protocols.2.1.2.nupkg.sha512",
+        "microsoft.identitymodel.protocols.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/2.1.2": {
+      "sha512": "oiB2Of9DWmmrWUiAX1MEjybrdQ0EpJq0FbtpxGuytecVaMmfIu1xzVEKrzmqxCSp25Ct+gtLVtDsdgOsgYA0TQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols.openidconnect/2.1.2",
+      "files": [
+        "lib/net451/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net451/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "microsoft.identitymodel.protocols.openidconnect.2.1.2.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/5.1.2": {
+      "sha512": "m7UP4iY/dWfVwDNNSVGvZV6r4PwflaK++sYQsTTGAMILYb5IJ4Z4rKJRCA0uKjo6jTcdWlQxyPsxoEVwjqPKqQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/5.1.2",
+      "files": [
+        "lib/net451/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net451/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.5.1.2.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
       ]
     },
     "Microsoft.Net.Http.Headers/1.1.2": {
@@ -7387,6 +7565,19 @@
         "runtimes/win/lib/netstandard1.3/System.Globalization.Extensions.dll",
         "system.globalization.extensions.4.3.0.nupkg.sha512",
         "system.globalization.extensions.nuspec"
+      ]
+    },
+    "System.IdentityModel.Tokens.Jwt/5.1.2": {
+      "sha512": "wneX9Rv1p8zXNQ8v3mzKPlja3dP0dQY0Ea/0KUtCtlyqB9WtYoEWxTidqgq5iBHGvG5p/yuFKfedgvt2y68HpA==",
+      "type": "package",
+      "path": "system.identitymodel.tokens.jwt/5.1.2",
+      "files": [
+        "lib/net451/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net451/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.5.1.2.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
     "System.Interactive.Async/3.0.0": {
@@ -10795,6 +10986,7 @@
       "Evento.Infrastructure >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.0.0",
       "Microsoft.AspNetCore >= 1.1.2",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 1.1.2",
       "Microsoft.AspNetCore.Mvc >= 1.1.3",
       "Microsoft.AspNetCore.StaticFiles >= 1.1.2",
       "Microsoft.EntityFrameworkCore.Design >= 1.1.2",
@@ -10812,22 +11004,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Api\\Evento.Api.csproj",
+      "projectUniqueName": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Api\\Evento.Api.csproj",
       "projectName": "Evento.Api",
-      "projectPath": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Api\\Evento.Api.csproj",
-      "outputPath": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Api\\obj\\",
+      "projectPath": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Api\\Evento.Api.csproj",
+      "outputPath": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Api\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/Evento.Api.dll": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Api\\bin\\placeholder\\netcoreapp1.1\\Evento.Api.dll"
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Infrastructure\\Evento.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Infrastructure\\Evento.Infrastructure.csproj"
+            "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Infrastructure\\Evento.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Infrastructure\\Evento.Infrastructure.csproj"
             }
           }
         }
@@ -10836,39 +11025,7 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "AutoMapper": {
-            "target": "Package",
-            "version": "6.1.1"
-          },
-          "Microsoft.ApplicationInsights.AspNetCore": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "Microsoft.AspNetCore": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.AspNetCore.Mvc": {
-            "target": "Package",
-            "version": "1.1.3"
-          },
-          "Microsoft.AspNetCore.StaticFiles": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
             "target": "Package",
             "version": "1.1.2"
           },
@@ -10876,13 +11033,50 @@
             "target": "Package",
             "version": "1.1.2"
           },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "1.1.2",
+            "autoReferenced": true
+          },
           "Microsoft.VisualStudio.Web.BrowserLink": {
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "1.1.1"
+            "version": "1.1.2"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
+          "AutoMapper": {
+            "target": "Package",
+            "version": "6.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
+          "Microsoft.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "1.1.3"
+          },
+          "Microsoft.ApplicationInsights.AspNetCore": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.AspNetCore.StaticFiles": {
+            "target": "Package",
+            "version": "1.1.2"
           }
         },
         "imports": [

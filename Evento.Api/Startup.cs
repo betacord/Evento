@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Evento.Core.Repositories;
 using Evento.Infrastructure.Mappers;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 
 namespace Evento.Api
@@ -38,6 +40,7 @@ namespace Evento.Api
             services.AddScoped<IEventRepository, EventRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IEventService, EventService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
         }
 
@@ -47,6 +50,17 @@ namespace Evento.Api
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseJwtBearerAuthentication(new JwtBearerOptions
+            {
+               AutomaticAuthenticate = true,
+               TokenValidationParameters = new TokenValidationParameters
+               {
+                    ValidIssuer = "http://localhost:5000", //adres api
+                    ValidAudience = "http://localhost:5000", //dopuszczalny adres klienta
+                    ValidateAudience = false, //validuj dopuszczalny adres klienta
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superTajneHaselkoheHeLel"))
+               }
+            });
             app.UseMvc();
         }
     }

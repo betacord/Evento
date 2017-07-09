@@ -7042,17 +7042,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Core\\Evento.Core.csproj",
+      "projectUniqueName": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Core\\Evento.Core.csproj",
       "projectName": "Evento.Core",
-      "projectPath": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Core\\Evento.Core.csproj",
-      "outputPath": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Core\\obj\\",
+      "projectPath": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Core\\Evento.Core.csproj",
+      "outputPath": "C:\\Users\\t-krz\\documents\\visual studio 2017\\Projects\\Evento\\Evento.Core\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/Evento.Core.dll": "C:\\Users\\t-krz\\Documents\\Visual Studio 2017\\Projects\\Evento\\Evento.Core\\bin\\placeholder\\netcoreapp1.1\\Evento.Core.dll"
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
@@ -7064,7 +7061,8 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "autoReferenced": true
           }
         }
       }
