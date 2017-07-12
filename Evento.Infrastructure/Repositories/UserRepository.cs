@@ -15,8 +15,8 @@ namespace Evento.Infrastructure.Repositories
         public async Task<User> GetAsync(Guid id)
             => await Task.FromResult(_users.SingleOrDefault(x => x.Id == id));
 
-        public async Task<User> GetAsync(string name)
-            => await Task.FromResult(_users.SingleOrDefault(x => x.Name.ToLowerInvariant() == name.ToLowerInvariant()));
+        public async Task<User> GetAsync(string email)
+            => await Task.FromResult(_users.SingleOrDefault(x => x.Email.ToLowerInvariant() == email.ToLowerInvariant()));
 
         public async Task<IEnumerable<User>> BrowseAsync(string name = "")
         {
