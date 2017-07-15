@@ -16,7 +16,7 @@ namespace Evento.Core.Domain
 
         public string Username { get; protected set; }
 
-        public DateTime PurchasedAt { get; protected set; }
+        public DateTime? PurchasedAt { get; protected set; }
 
         public bool Purchased => UserId.HasValue;
 
@@ -30,6 +30,30 @@ namespace Evento.Core.Domain
             EventId = @event.Id;
             Seating = seating;
             Price = price;
+        }
+
+        public void Purchase(User user)
+        {
+            if (Purchased)
+            {
+                throw new Exception($"Ticket was alredy purchased by user {Username}");
+            }
+
+            UserId = user.Id;
+            Username = user.Name;
+            PurchasedAt = DateTime.UtcNow;
+        }
+
+        public void Cancel()
+        {
+            if (!Purchased)
+            {
+                throw new Exception("Ticket was not purchased!");
+            }
+
+            UserId = null;
+            Username = null;
+            PurchasedAt = null;
         }
     }
 }
