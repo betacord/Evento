@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Evento.Infrastructure.Commands.Events;
+using Evento.Infrastructure.DTO;
 using Evento.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace Evento.Api.Controllers
 {
@@ -13,16 +16,24 @@ namespace Evento.Api.Controllers
     public class EventsController : ApiControllerBase
     {
         private readonly IEventService _eventService;
+        private readonly IMemoryCache _memoryCache;
 
-        public EventsController(IEventService eventService)
+        public EventsController(IEventService eventService, IMemoryCache memoryCache)
         {
             _eventService = eventService;
+            _memoryCache = memoryCache;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get(string name)
         {
-            var events = await _eventService.BrowseAsync(name);
+            var events = _memoryCache.Get<IEnumerable<EventDto>>("events");
+
+            if (events == null)
+            {
+                events = await _eventService.BrowseAsync(name);
+                _memoryCache.Set("events", events, TimeSpan.FromMinutes(1));
+            }
 
             return Json(events);
         }

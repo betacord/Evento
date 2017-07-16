@@ -1,0 +1,25 @@
+2017-07-16 17:16:12.8176|INFO|DataInitializer|Initializing data...
+2017-07-16 17:16:12.9384|INFO|DataInitializer|Created users: user and admin
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 0
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 1
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 2
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 3
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 4
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 5
+2017-07-16 17:16:12.9679|INFO|DataInitializer|Created event with name Event 6
+2017-07-16 17:16:12.9849|INFO|DataInitializer|Created event with name Event 7
+2017-07-16 17:16:12.9849|INFO|DataInitializer|Created event with name Event 8
+2017-07-16 17:16:12.9849|INFO|DataInitializer|Created event with name Event 9
+2017-07-16 18:30:30.2420|INFO|DataInitializer|Initializing data...
+2017-07-16 18:30:30.3243|INFO|DataInitializer|Created users: user and admin
+2017-07-16 18:30:30.3503|INFO|DataInitializer|Created event with name Event 0
+2017-07-16 18:30:30.3503|INFO|DataInitializer|Created event with name Event 1
+2017-07-16 18:30:30.3503|INFO|DataInitializer|Created event with name Event 2
+2017-07-16 18:30:30.3843|INFO|DataInitializer|Created event with name Event 3
+2017-07-16 18:30:30.3843|INFO|DataInitializer|Created event with name Event 4
+2017-07-16 18:30:30.3843|INFO|DataInitializer|Created event with name Event 5
+2017-07-16 18:30:30.3893|INFO|DataInitializer|Created event with name Event 6
+2017-07-16 18:30:30.4152|INFO|DataInitializer|Created event with name Event 7
+2017-07-16 18:30:30.4152|INFO|DataInitializer|Created event with name Event 8
+2017-07-16 18:30:30.4422|INFO|DataInitializer|Created event with name Event 9
+2017-07-16 18:30:30.4422|INFO|DataInitializer|Data was initialized
